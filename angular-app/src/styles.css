@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    color : rgba(0,0,0,0.71);
+}
+.customButton{
+    background-color: #000000;
+    color:red;
+}

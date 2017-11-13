@@ -3,8 +3,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addResidentModalLabel">Add Resident</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" class="customButton"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addResidentModalLabel" >Add Resident</h4>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -52,7 +52,7 @@
               
               <div>
               <select name="cashCurrency" formControlName="cashCurrency">
-                <option value="USD">USD</option>                
+                <option value="Rupee">Rupee</option>                
               </select>
               </div>        
             </div>
