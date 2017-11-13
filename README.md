@@ -1,9 +1,7 @@
-*Read this in other languages: [中国](README-cn.md).*
-# Decentralized Energy with Hyperledger Composer
+# Bijli - Decentralized Energy Economy
 
-A key application of Blockchain being currently explored is a Decentralized Energy network. The idea stems from a neighborhood where certain Residents are producing energy through Solar panels or other means, and can sell excess energy to Residents needing energy. The transactions would be based on coins in each Resident's account. As per a pre-determined contract and rate, the coins would be debited from the consumer and credited to the producer, for a certain billing period. Each transaction would need to be atomic and added to a Blockchain ledger for trust and verification. The network can include Banks to transact coins for Fiat currency (USD). The network can have Utility Company who can buy or provide energy through the network.
+A key application of Blockchain being currently explored is a Decentralized Energy Economy. The idea stems from a neighborhood where certain Residents are producing energy through Solar panels or other means,and can sell excess energy to Residents needing energy. The transactions would be based on *bijli* coins in each Resident's account. As per a pre-determined contract and rate, the coins would be debited from the consumer and credited to the producer, for a certain billing period. Each transaction would need to be atomic and added to a Blockchain ledger for trust and verification. The network can include Banks to transact coins for Fiat currency (INR/USD) under a variable echange rate determined by the supply/demand in the distribnution. The network can have Utility Company who can buy or provide energy through the network.
 
-In this developer journey, we will create such a Blockchain application using Hyperledger Composer. The network consists of Residents, Banks and Utility Companies. Residents can exchange coins for energy among each other.  The application assumes a pre-paid system where transactions occur after the energy is consumed and the values are updated.  The Resident can exchange coins for Fiat money (USD) with Banks on the network.  The Residents can also transact coins for energy with a Utility company on the network.
 
 # Architecture Flow
 
@@ -123,11 +121,6 @@ npm start
 
 The application should now be running at:
 `http://localhost:4200`
-
-<div style='border: 2px solid #f00;'>
-  <img width="800" src="images/app_scrnshot.png">
-</div>
-</br>
 
 The REST server to communicate with network is available here:
 `http://localhost:3000/explorer/`

@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
-    "app": "composer-rest-server -c admin@decentralized-energy-network -p 3000",
+    "app": "composer-rest-server -c admin@decentralized-energy-network -n never -p 3000",
     "start": "concurrently \"ng serve --host 0.0.0.0\" \"npm run app\"",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch false",
