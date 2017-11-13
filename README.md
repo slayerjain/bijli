@@ -49,9 +49,9 @@ Follow these steps to setup and run this developer journey. The steps are descri
 
 ## 1. Clone the repo
 
-Clone the `Decentralized-Energy-Composer code` locally. In a terminal, run:
+Clone the `Bijli code` locally. In a terminal, run:
 
-`git clone https://github.com/IBM/Decentralized-Energy-Composer`
+`git clone https://github.com/slayerjain/bijli`
 
 ## 2. Setup Fabric
 
