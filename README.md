@@ -2,6 +2,14 @@
 
 A key application of Blockchain being currently explored is a Decentralized Energy Economy. The idea stems from a neighborhood where certain Residents are producing energy through Solar panels or other means,and can sell excess energy to Residents needing energy. The transactions would be based on *bijli* coins in each Resident's account. As per a pre-determined contract and rate, the coins would be debited from the consumer and credited to the producer, for a certain billing period. Each transaction would need to be atomic and added to a Blockchain ledger for trust and verification. The network can include Banks to transact coins for Fiat currency (INR/USD) under a variable echange rate determined by the supply/demand in the distribnution. The network can have Utility Company who can buy or provide energy through the network.
 
+### Highlights
+
+* The cash value of bijli coins varies based on demand/supply of electricity, market reaches power equilibirum eventually.  
+* Consistent high throughput data API for running analytics platforms enabling reliable forcasting. 
+* Toshi integration for exchaning solarcoins.
+* *Prepaid electricity* could be even more felxible than prepaid mobile phone services.  
+* Since each smart meter could be part of the system, no special seperate computing hardware/administration required. 
+* Donations can be made to fund street lights in community, or some poor community/institution or players could fund the stadium lights during the night to practice thier sport. 
 
 # Architecture Flow
 
