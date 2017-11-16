@@ -3,7 +3,7 @@
     "composer": "^0.14.0"
   },
   "name": "bijli-network",
-  "version": "0.1.00",
+  "version": "0.1.0",
   "description": "Bijli - Decentraliesed Energy Economy",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/bijli-network.bna",
