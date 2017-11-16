@@ -82,6 +82,7 @@ cd fabric-tools/
 ./downloadFabric.sh
 ./startFabric.sh
 ./createComposerProfile.sh
+./createPeerAdminCard.sh
 ```
 
 
@@ -92,25 +93,26 @@ Next generate the Business Network Archive (BNA) file from the root directory:
 ```
 cd ../
 npm install
-composer archive create -a dist/decentralized-energy-network.bna --sourceType dir --sourceName .
 ```
 
-The `composer archive create` command has created a file called `decentralized-energy-network.bna` in the `dist` folder.
+The npm install also runs the `composer archive create` command, which has created a file called `bijli-network.bna` in the `dist` folder.
 
 
 ## 4. Deploy to Fabric
 
-Now, we are ready to deploy the BNA file to Hyperledger Fabric:
+Now, we are ready to deploy the BNA file to Hyperledger Fabric, and import the busineess network card (*12345678* is a network secret):
 
 ```
 cd dist
-composer network deploy -a decentralized-energy-network.bna -p hlfv1 -i PeerAdmin -s randomString -A admin -S
+composer network deploy -a bijli-network.bna -A admin -S 12345678 -c PeerAdmin@hlfv1 -f bijliAdminCard
+composer card import -f bijliAdminCard
 ```
+
 
 You can verify that the network has been deployed by typing:
 
 ```
-composer network ping -n decentralized-energy-network -p hlfv1 -i admin -s adminpw
+composer network ping -n bijli-network -p hlfv1 -i admin -s adminpw
 ```
 
 ## 5. Run Application
