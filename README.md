@@ -100,7 +100,7 @@ The npm install also runs the `composer archive create` command, which has creat
 
 ## 4. Deploy to Fabric
 
-Now, we are ready to deploy the BNA file to Hyperledger Fabric, and import the busineess network card (*12345678* is a network secret):
+Now, we are ready to deploy the BNA file to Hyperledger Fabric, and import the busineess network card:
 
 ```
 cd dist
