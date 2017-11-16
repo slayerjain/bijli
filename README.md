@@ -104,15 +104,16 @@ Now, we are ready to deploy the BNA file to Hyperledger Fabric, and import the b
 
 ```
 cd dist
-composer network deploy -a bijli-network.bna -A admin -S 12345678 -c PeerAdmin@hlfv1 -f bijliAdminCard
-composer card import -f bijliAdminCard
+composer runtime install --card PeerAdmin@hlfv1 --businessNetworkName bijli-network
+composer network start --card PeerAdmin@hlfv1 --networkAdmin admin --networkAdminEnrollSecret adminpw --archiveFile bijli-network.bna --file bijliadmin.card
+composer card import --file bijliadmin.card
 ```
 
 
 You can verify that the network has been deployed by typing:
 
 ```
-composer network ping -n bijli-network -p hlfv1 -i admin -s adminpw
+composer network ping --card admin@bijli-network
 ```
 
 ## 5. Run Application
